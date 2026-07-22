@@ -5,15 +5,12 @@ from src.validator import TariffValidator
 
 
 def main():
-    # Domyślna ścieżka do bazy
     blacklist_path = Path("data/pesel_blacklist.csv")
     validator = TariffValidator(blacklist_path)
-
-    # Jeśli użytkownik podał plik jako argument w terminalu
+   
     if len(sys.argv) > 1:
         json_path = Path(sys.argv[1])
     else:
-        # Fallback na domyślny plik demonstracyjny
         json_path = Path("data/request_clean.json")
 
     if not json_path.exists():
@@ -28,7 +25,17 @@ def main():
     print(f"\n--- Wynik walidacji dla: {json_path.name} ---")
     print(f"Status:   {result['decision']}")
     print(f"Powód:    {result['reason']}")
-    print(f"Request:  {result['requestId']}\n")
+    print(f"Request:  {result['requestId']}")
+
+    output_dir = Path("output")
+    output_dir.mkdir(exist_ok=True)  # Creates 'output' directory if it doesn't exist
+
+    output_file = output_dir / f"result_{json_path.stem}.json" # Creates output file path with the pattern: result_<original_filename>.json
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+    print(f"💾 Zapisano wynik do pliku: {output_file}\n")
 
 
 if __name__ == "__main__":
