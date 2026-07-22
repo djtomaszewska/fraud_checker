@@ -1,6 +1,6 @@
 # 🛡️ Fraud Checker - PESEL Tariff Validator
 
-![Tests Status](https://github.com/<TWOJ_NICK>/fraud_checker/actions/workflows/test.yml/badge.svg)
+![Tests Status](https://github.com/djtomaszewska/fraud_checker/actions/workflows/test.yml/badge.svg)
 ![Python Version](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
 ![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 
