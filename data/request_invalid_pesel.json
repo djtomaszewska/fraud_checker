@@ -1,0 +1,42 @@
+{
+  "envelope": {
+    "meta": {
+      "system": "TariffEngine",
+      "environment": "PREP",
+      "requestId": "req-invalid-pesel-0005",
+      "timestamp": "2026-07-21T10:20:00Z"
+    },
+    "applications": [
+      {
+        "appId": "app-05",
+        "source": "SalesSystem",
+        "policies": [
+          {
+            "policyId": "pol-05",
+            "attributes": [],
+            "proxyCall": null,
+            "personInfo": {
+              "personId": "p-5555",
+              "pesel": "95010112349",
+              "firstName": "Martyna",
+              "lastName": "Wiśniewska",
+              "birthDate": "1995-01-01",
+              "contact": {
+                "email": "martyna@example.com",
+                "phone": "+48700888999"
+              }
+            },
+            "vehicleInfo": {
+              "vehicleId": "v-7777",
+              "vin": "WAUZZZ8K9BA000000",
+              "make": "Audi",
+              "model": "A4",
+              "year": 2017,
+              "registration": "GD99887"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
