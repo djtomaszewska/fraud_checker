@@ -27,7 +27,8 @@ Walidator działa w oparciu o sekwencyjny potok walidacji (early return pattern)
 
 
 # Klonowanie repozytorium
-git clone [https://github.com/](https://github.com/)djtomaszewska/fraud_checker.git
+git clone [https://github.com/djtomaszewska/fraud_checker.git](https://github.com/djtomaszewska/fraud_checker.git)
+
 cd fraud_checker
 
 # Tworzenie i aktywacja venv (Windows)
@@ -35,17 +36,17 @@ python -m venv .venv
 .venv\Scripts\activate
 
 # Instalacja zależności testowych
-'pip install pytest pytest-cov'
+`pip install pytest pytest-cov`
 
 ### Aplikacja posiada testy jednostkowe:
 # Uruchomienie testów:
-'python -m pytest -v'
+`python -m pytest -v`
 
 # Generowanie raportu pokrycia kodu (Coverage):
-'python -m pytest --cov=src --cov-report=term-missing'
+`python -m pytest --cov=src --cov-report=term-missing`
 
 # Struktura projektu:
-
+```text
 fraud_checker/
 ├── .github/
 │   └── workflows/
@@ -54,6 +55,7 @@ fraud_checker/
 │   ├── pesel_blacklist.csv  # Baza zastrzeżonych numerów PESEL
 │   └── request_*.json       # Pliki ze scenariuszami testowymi
 ├── src/
+│   ├── __init__.py
 │   ├── data_loader.py       # Wczytywanie plików CSV
 │   ├── utils.py             # Wyciąganie danych i walidacja algorytmu PESEL
 │   └── validator.py         # Główna klasa walidatora (TariffValidator)
@@ -65,3 +67,4 @@ fraud_checker/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
