@@ -27,10 +27,10 @@ Walidator działa w oparciu o sekwencyjny potok walidacji (early return pattern)
 
 
 # Klonowanie repozytorium
-```bash
+
 git clone [https://github.com/djtomaszewska/fraud_checker.git](https://github.com/djtomaszewska/fraud_checker.git)
+
 cd fraud_checker
-```
 
 # Tworzenie i aktywacja venv (Windows)
 ```bash
