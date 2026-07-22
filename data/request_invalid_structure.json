@@ -1,0 +1,11 @@
+{
+  "envelope": {
+    "meta": {
+      "system": "TariffEngine",
+      "environment": "PREP",
+      "requestId": "req-invalid-0004",
+      "timestamp": "2026-07-21T10:15:00Z"
+    },
+    "applications": []
+  }
+}

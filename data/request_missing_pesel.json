@@ -1,0 +1,42 @@
+{
+  "envelope": {
+    "meta": {
+      "system": "TariffEngine",
+      "environment": "PREP",
+      "requestId": "req-missing-0003",
+      "timestamp": "2026-07-21T10:10:00Z"
+    },
+    "applications": [
+      {
+        "appId": "app-03",
+        "source": "SalesSystem",
+        "policies": [
+          {
+            "policyId": "pol-03",
+            "attributes": [],
+            "proxyCall": null,
+            "personInfo": {
+              "personId": "p-9999",
+              "pesel": null,
+              "firstName": "Piotr",
+              "lastName": "Zieliński",
+              "birthDate": "1990-05-15",
+              "contact": {
+                "email": "piotr@example.com",
+                "phone": "+48500333444"
+              }
+            },
+            "vehicleInfo": {
+              "vehicleId": "v-5555",
+              "vin": "JMZCR19F600000000",
+              "make": "Mazda",
+              "model": "3",
+              "year": 2015,
+              "registration": "PO98765"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

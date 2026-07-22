@@ -1,0 +1,42 @@
+{
+  "envelope": {
+    "meta": {
+      "system": "TariffEngine",
+      "environment": "PREP",
+      "requestId": "req-clean-0001",
+      "timestamp": "2026-07-21T10:00:00Z"
+    },
+    "applications": [
+      {
+        "appId": "app-01",
+        "source": "SalesSystem",
+        "policies": [
+          {
+            "policyId": "pol-01",
+            "attributes": [],
+            "proxyCall": null,
+            "personInfo": {
+              "personId": "p-1001",
+              "pesel": "95010112344",
+              "firstName": "Anna",
+              "lastName": "Nowak",
+              "birthDate": "1995-01-01",
+              "contact": {
+                "email": "anna.nowak@example.com",
+                "phone": "+48600111222"
+              }
+            },
+            "vehicleInfo": {
+              "vehicleId": "v-1001",
+              "vin": "WVWZZZ1KZ9W000000",
+              "make": "Volkswagen",
+              "model": "Golf",
+              "year": 2019,
+              "registration": "GD12345"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

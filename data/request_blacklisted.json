@@ -1,0 +1,42 @@
+{
+  "envelope": {
+    "meta": {
+      "system": "TariffEngine",
+      "environment": "PREP",
+      "requestId": "req-blacklist-0002",
+      "timestamp": "2026-07-21T10:05:00Z"
+    },
+    "applications": [
+      {
+        "appId": "app-02",
+        "source": "SalesSystem",
+        "policies": [
+          {
+            "policyId": "pol-02",
+            "attributes": [],
+            "proxyCall": null,
+            "personInfo": {
+              "personId": "p-1234",
+              "pesel": "90110544556",
+              "firstName": "Jan",
+              "lastName": "Kowalski",
+              "birthDate": "1990-11-05",
+              "contact": {
+                "email": "jan.k@example.com",
+                "phone": null
+              }
+            },
+            "vehicleInfo": {
+              "vehicleId": "v-9876",
+              "vin": "WWWWWWWWWWWWWWWWW",
+              "make": "Toyota",
+              "model": "Corolla",
+              "year": 2018,
+              "registration": "XX12345"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
