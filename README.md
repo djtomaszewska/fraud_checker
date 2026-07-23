@@ -71,3 +71,12 @@ fraud_checker/
 ├── requirements.txt
 └── README.md
 ```
+
+### 📦 Budowanie pliku wykonawczego (.exe)
+
+Jeśli chcesz samodzielnie zbudować plik `.exe`:
+
+```bash
+pip install pyinstaller
+pyinstaller --clean --onefile --add-data "data;data" --name fraud_checker main.py
+```
