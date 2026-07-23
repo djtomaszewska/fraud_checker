@@ -1,5 +1,14 @@
+import sys
 import csv
 from pathlib import Path
+
+def get_resource_path(relative_path: str) -> Path:
+    """
+    Get the absolute path to a resource, works for development and for PyInstaller
+    """
+    if hasattr(sys, "_MEIPASS"):
+        return Path(sys._MEIPASS) / relative_path
+    return Path(relative_path)
 
 def load_csv_file(file_path: str | Path) -> dict[str, str]:
     """
