@@ -1,0 +1,42 @@
+{
+  "envelope": {
+    "meta": {
+      "system": "TariffEngine",
+      "environment": "PREP",
+      "requestId": "req-cli-blacklisted-02",
+      "timestamp": "2026-07-22T11:05:00Z"
+    },
+    "applications": [
+      {
+        "appId": "app-cli-02",
+        "source": "SalesSystem",
+        "policies": [
+          {
+            "policyId": "pol-cli-02",
+            "attributes": [],
+            "proxyCall": null,
+            "personInfo": {
+              "personId": "p-2002",
+              "pesel": "87030344553",
+              "firstName": "Tomasz",
+              "lastName": "Zieliński",
+              "birthDate": "1987-03-03",
+              "contact": {
+                "email": "tomasz.zielinski@example.com",
+                "phone": "+48600333444"
+              }
+            },
+            "vehicleInfo": {
+              "vehicleId": "v-2002",
+              "vin": "WVWZZZ1KZ9W654321",
+              "make": "Volkswagen",
+              "model": "Passat",
+              "year": 2018,
+              "registration": "GD99887"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
