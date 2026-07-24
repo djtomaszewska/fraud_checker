@@ -1,0 +1,42 @@
+{
+  "envelope": {
+    "meta": {
+      "system": "TariffEngine",
+      "environment": "PREP",
+      "requestId": "req-cli-clean-01",
+      "timestamp": "2026-07-22T11:00:00Z"
+    },
+    "applications": [
+      {
+        "appId": "app-cli-01",
+        "source": "SalesSystem",
+        "policies": [
+          {
+            "policyId": "pol-cli-01",
+            "attributes": [],
+            "proxyCall": null,
+            "personInfo": {
+              "personId": "p-2001",
+              "pesel": "88091855668",
+              "firstName": "Ewa",
+              "lastName": "Kowalska",
+              "birthDate": "1988-09-18",
+              "contact": {
+                "email": "ewa.kowalska@example.com",
+                "phone": "+48500111222"
+              }
+            },
+            "vehicleInfo": {
+              "vehicleId": "v-2001",
+              "vin": "WAUZZZ8K9BA123456",
+              "make": "Audi",
+              "model": "A4",
+              "year": 2021,
+              "registration": "GD11223"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
