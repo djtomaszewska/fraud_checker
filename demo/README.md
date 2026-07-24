@@ -26,6 +26,4 @@ W podawaniu ścieżki do sprawdzanych plików json należy zwrócić uwagę, że
 * Przekazanie ścieżki relatywnej (przykładowo: `.\fraud_checker.exe ..\demo\sample_blacklisted_man.json`)
 
 ### Demo aplikacji:
-```markdown
-     ![Demo aplikacji](demo/fc_demo.gif)
-```
+![Demo aplikacji](./fc_demo.gif)
